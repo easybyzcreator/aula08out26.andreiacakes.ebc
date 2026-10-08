@@ -1,0 +1,17 @@
+{
+  "name": "aula02set26-egn-ebc",
+  "short_name": "aula02set26-egn-ebc",
+  "description": "Apresentação de slides da Escola de Gastronomia & Negócios e Easy Byz Creator",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2B2E22",
+  "theme_color": "#424733",
+  "icons": [
+    {
+      "src": "/assets/patiebc.jpg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

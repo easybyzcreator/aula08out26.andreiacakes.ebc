@@ -1,0 +1,8 @@
+{
+  "name": "AULA08OUT26-Andreiacakes",
+  "description": "Apresentação de slides interativa e profissional da Andreia Cakes USA com Easy Byz Creator para confeitaria, bolos e sobremesas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-dark: #342825;
+    --color-terracotta: #BD5944;
+    --color-bg-light: #FAF6F2;
+    --color-sand-gold: #D4A373;
+    --color-earth-brown: #342825;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5EFEB;
+    color: #342825;
+    font-weight: 400;
+  }
+
+  /* Fahkwang bold para títulos principais */
+  h1, .font-heading, .font-fahkwang {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 700;
+  }
+
+  /* Aleo bold para subtítulos, títulos de cards e destaques */
+  h2, h3, h4, .font-aleo {
+    font-family: 'Aleo', serif;
+    font-weight: 700;
+  }
+
+  /* Montserrat para textos corridos, legendas e descrições */
+  p, span, label, input, button, .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Presentation 16:9 Aspect Ratio Container */
+.slide-stage-16-9 {
+  aspect-ratio: 16 / 9;
+  max-width: 1440px;
+  max-height: 810px;
+  width: 100%;
+}
+
+/* Print / PDF generation styles */
+@media print {
+  body {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .slide-stage-print {
+    page-break-after: always;
+    page-break-inside: avoid;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: #BD5944;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #342825;
+}
